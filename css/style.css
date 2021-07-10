@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.snip1135 {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.snip1135 * {
+    box-sizing: border-box;
+}
+
+.snip1135 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    padding: 0;
+}
+
+.snip1135 a {
+    padding: 0.5em 0;
+    color: #FFFF;
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.snip1135 a:before,
+.snip1135 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.snip1135 a:before {
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: #ffff;
+}
+
+.snip1135 a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: #ffffff;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+}
+
+.snip1135 a:hover:before,
+.snip1135 .current a:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.snip1135 a:hover:after,
+.snip1135 .current a:after {
+    max-width: 100%;
+}
+
+.dropdown-item {
+    color: rgba(0, 0, 0, .5) !important;
+}
+
+.dropdown-menu.show {
+    border: none;
+    padding: 5px;
+    border-radius: 0 !important;
+}
+
+.card-body {
+    background-color: #f8f9fa !important;
+}
+
+.bg-light {
+    background-color: #e9ecef !important;
+}
